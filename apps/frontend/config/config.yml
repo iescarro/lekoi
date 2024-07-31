@@ -1,0 +1,6 @@
+route:
+  /:
+    param: { module: main, action: login, layout: login_layout }
+database:
+  type: oracle
+  username: 

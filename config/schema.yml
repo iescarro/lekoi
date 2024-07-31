@@ -1,0 +1,33 @@
+bonus:
+  _attributes: { class: Bonus }
+  ename: varchar(10)
+  job: varchar(9)
+  sal: double
+  comm: doule
+dept:
+  _attributes: { class: Department }
+  deptno:
+    primary_key: true
+    type: integer
+  dname: varchar(14)
+  loc: varchar(13)
+emp:
+  _attributes: { class: Employee }
+  empno:
+    primary_key: true
+    type: integer
+  ename: varchar(10)
+  job: varchar(9)
+  mgr: integer
+  hiredate: datetime
+  sal: double
+  comm: double
+  deptno:
+    type: integer
+    foreign_key: true
+    references: dept(deptno)
+salgrade:
+  _attributes: { class: SalaryGrade }
+  grade: integer
+  losal: double
+  hisal: double
