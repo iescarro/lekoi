@@ -4,14 +4,14 @@ Lekoi is a lightweight PHP web framework inspired by Rails, designed to simplify
 
 ## Features
 
-* MVC Architecture: Follow the Model-View-Controller pattern to organize your application efficiently.
-* Routing: Simplified routing system for handling HTTP requests and generating URLs.
-* ORM (Object-Relational Mapping): Easy database interactions with built-in ORM for seamless data management.
-* Built-in Tools: Includes tools for migrations, scaffolding, and more.
-* Convention Over Configuration: Reduces the need for configuration with sensible defaults.
-  
+* **MVC Architecture**: Follow the Model-View-Controller pattern to organize your application efficiently.
+* **Routing**: Simplified routing system for handling HTTP requests and generating URLs.
+* **TODO: ORM (Object-Relational Mapping)**: Easy database interactions with built-in ORM for seamless data management.
+* **Built-in Tools**: Includes tools for migrations, scaffolding, and more.
+* **Convention Over Configuration**: Reduces the need for configuration with sensible defaults.
+
 ## Installation
-  
+
 To get started with Lekoi, follow these steps:
 
 Download Lekoi:
@@ -33,70 +33,79 @@ composer install
 
 Copy the .env.example file to .env and configure your environment variables:
 
-```bash
+````bash
 cp .env.example .env
 
 ## Run the Development Server:
 
 ```bash
-php -S localhost:8000 -t public
-```
+php -S localhost:4200 -t public
+````
 
 Your application will be available at http://localhost:8000.
 
-Usage
-Creating a New Project
+## Usage
+
+### Creating a New Project
+
 To create a new project using Lekoi:
 
 Create a New Application:
 
-bash
-Copy code
-php lekoi new myapp
+```bash
+composer create-project iescarro/lekoi myapp
+```
+
 Navigate to Your Project Directory:
 
-bash
-Copy code
+```bash
 cd myapp
+```
+
 Start the Development Server:
 
-bash
-Copy code
+```bash
 php -S localhost:8000 -t public
-Generating Components
+```
+
+### Generating Components
+
 Lekoi provides commands to generate various components of your application:
 
 Generate a Model:
 
-bash
-Copy code
+```bash
 php lekoi make:model ModelName
+```
+
 Generate a Controller:
 
-bash
-Copy code
+```bash
 php lekoi make:controller ControllerName
+```
+
 Generate a Migration:
 
-bash
-Copy code
+```bash
 php lekoi make:migration create_table_name
-Routing
+```
+
+### Routing
+
 Define your routes in routes/web.php. For example:
 
+```php
+Lekoi\Route::get('/', 'HomeController@index');
+Lekoi\Route::get('/about', 'AboutController@show');
+```
 
-php
-Copy code
-Route::get('/', 'HomeController@index');
-Route::get('/about', 'AboutController@show');
-Models
+### Models
+
 Define your models in app/Models. Each model class should extend Lekoi\Model.
 
 Example model:
 
-php
-Copy code
-
+```php
 <?php
 
 namespace App\Models;
@@ -107,13 +116,15 @@ class User extends Model
 {
     protected $table = 'users';
 }
-Controllers
+```
+
+### Controllers
+
 Define your controllers in app/Controllers. Each controller should extend Lekoi\Controller.
 
 Example controller:
 
-php
-Copy code
+```php
 <?php
 
 namespace App\Controllers;
@@ -127,25 +138,38 @@ class HomeController extends Controller
         return view('home.index');
     }
 }
-Contributing
+```
+
+## Contributing
+
 We welcome contributions to Lekoi! To contribute:
 
-Fork the Repository
+### Fork the Repository
+
 Create a New Branch
-bash
-Copy code
+
+```bash
 git checkout -b feature/your-feature
-Commit Your Changes
-bash
-Copy code
+```
+
+### Commit Your Changes
+
+```bash
 git commit -m "Add your feature"
-Push to the Branch
-bash
-Copy code
+```
+
+### Push to the Branch
+
+```bash
 git push origin feature/your-feature
-Submit a Pull Request
-License
+```
+
+### Submit a Pull Request
+
+## License
+
 Lekoi is licensed under the MIT License. See the LICENSE file for more information.
 
-Contact
-For questions or support, please contact us at your-email@example.com.
+### Contact
+
+For questions or support, please contact us at support@lekoi.com
