@@ -1,6 +1,6 @@
 ## Lekoi
 
-Lekoi is a lightweight MVC framework for building PHP web applications with simplicity and efficiency. A port from ttps://sourceforge.net/projects/lekoi/
+Lekoi is a lightweight MVC framework for building PHP web applications with simplicity and efficiency. A port from https://sourceforge.net/projects/lekoi/
 
 ## Features
 * Model-View-Controller (MVC) architecture
