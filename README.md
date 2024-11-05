@@ -1,14 +1,24 @@
+<p align="center">
+    <img alt="Logo Lekoi" src="/art/logo.png">
+</p>
+
+<p align="center">
+    <a href="https://packagist.org/packages/iescarro/lekoi"><img src="https://img.shields.io/packagist/dt/iescarro/lekoi" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/iescarro/lekoi"><img src="https://img.shields.io/packagist/v/iescarro/lekoi" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/iescarro/lekoi"><img src="https://img.shields.io/packagist/l/iescarro/lekoi" alt="License"></a>
+</p>
+
 # Lekoi PHP Web Framework
 
 Lekoi is a lightweight PHP web framework inspired by Rails, designed to simplify web development with elegant conventions and ease of use. It provides a clean and efficient way to build web applications with minimal boilerplate code.
 
 ## Features
 
-* **MVC Architecture**: Follow the Model-View-Controller pattern to organize your application efficiently.
-* **Routing**: Simplified routing system for handling HTTP requests and generating URLs.
-* **TODO: ORM (Object-Relational Mapping)**: Easy database interactions with built-in ORM for seamless data management.
-* **Built-in Tools**: Includes tools for migrations, scaffolding, and more.
-* **Convention Over Configuration**: Reduces the need for configuration with sensible defaults.
+- **MVC Architecture**: Follow the Model-View-Controller pattern to organize your application efficiently.
+- **Routing**: Simplified routing system for handling HTTP requests and generating URLs.
+- **TODO: ORM (Object-Relational Mapping)**: Easy database interactions with built-in ORM for seamless data management.
+- **Built-in Tools**: Includes tools for migrations, scaffolding, and more.
+- **Convention Over Configuration**: Reduces the need for configuration with sensible defaults.
 
 ## Installation
 
